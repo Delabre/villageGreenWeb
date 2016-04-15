@@ -1,0 +1,11 @@
+#navGreen
+{
+	background: #4aaf67;
+	text-transform: uppercase;	
+	font-weight: bold;
+}
+
+#navGreen a
+{
+	color: white;
+}

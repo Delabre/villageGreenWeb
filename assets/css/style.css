@@ -1,11 +1,151 @@
+@media (max-width : 992px)
+{
+	header img 
+	{
+		margin-bottom: 10px;
+	}
+}
+body
+{
+	background: url('../img/background.png') no-repeat fixed;
+}
 #navGreen
 {
 	background: #4aaf67;
 	text-transform: uppercase;	
 	font-weight: bold;
+	border-radius: 0px;
+	border: #4aaf67 1px solid;
+	margin-top: 23px;
+	margin-bottom: 0px;
 }
 
 #navGreen a
 {
 	color: white;
+}
+
+#searchAside
+{
+	display: inline;
+	width: 80%;
+	margin-right: 3px;
+}
+
+#asideHeader
+{
+	/*width: 160px;*/
+	background: #4aaf67;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#mid
+{
+	border-top: 2px #1d933c solid;
+	border-bottom: 2px #1d933c solid;
+}
+
+#asideHeader div
+{
+	padding: 10px;
+}
+
+#asideHeader a
+{
+	color: white;
+	font-weight: bold;
+}
+
+#asideHeader span
+{
+	margin-left: 10px;
+}
+
+#divNav
+{	
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#corpsSection
+{
+	background: white;
+	margin-top: 0px;
+}
+#myCarousel
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#divCar
+{
+	margin: 0px;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.carousel-indicators 
+{
+	top: 10px;
+	left: 96%;
+	height: 50px;
+}
+
+.carousel-control 
+{
+	width: 5%;
+}
+
+.carousel-caption
+{
+	bottom: 0px;
+	padding: 0px;
+	text-align: right;
+	background: rgba(200,200,200,0.7);
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
+.carousel-caption h1, p
+{
+	color: black;
+	padding-right: 40px;
+}
+
+.carousel-caption h1
+{
+	font-weight: bold;
+}
+
+hr
+{
+	border-color: rgb(200,200,200);
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+#row2
+{
+	margin: 0px;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#row2 img
+{
+	width: 24.6%;
+}
+@media (max-width : 1199px)
+{
+	#row2 img
+{
+	width: 24.4%;
+}
 }

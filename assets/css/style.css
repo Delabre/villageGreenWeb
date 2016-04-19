@@ -210,3 +210,9 @@ hr
 	margin-left: 10px;
     margin-right: 10px;
 }
+
+#row3 ul
+{
+	padding-left: 30%;
+	list-style-type:none;
+}

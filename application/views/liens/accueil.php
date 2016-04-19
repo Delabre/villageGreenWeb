@@ -112,21 +112,22 @@
 					</div>
 				</div>
 				<div id="row3" class="row">
+					<h3>Nos catégories</h3>
 						<div class="col-xs-6">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<ul>
+								<li>Guitares & Basses</li>
+								<li>Batteries & Percussions</li>
+								<li>Pianos & Claviers</li>
+								<li>Studio & Enregistrement</li>
+							</ul>
 						</div>
 						<div class="col-xs-6">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<ul>
+								<li>Matériel DJ</li>
+								<li>Instruments à Vent</li>
+								<li>Instruments Traditionnels</li>
+								<li>Accessoires</li>
+							</ul>
 						</div>														
 				</div>							
 			</section>

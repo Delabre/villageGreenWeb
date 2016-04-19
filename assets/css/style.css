@@ -8,7 +8,9 @@
 body
 {
 	background: url('../img/background.png') no-repeat fixed;
+	background-size: cover;
 }
+
 #navGreen
 {
 	background: #4aaf67;
@@ -72,7 +74,8 @@ body
 
 #corpsSection
 {
-	background: white;
+	background: rgba(255,255,255,.90);
+
 	margin-top: 0px;
 }
 #myCarousel
@@ -110,12 +113,19 @@ body
 	width: 100%;
 	left: 0;
 	right: 0;
+	height: 30%;
 }
 
 .carousel-caption h1, p
 {
 	color: black;
 	padding-right: 40px;
+}
+.carousel-caption h1
+{
+	font-size: 30px;
+	margin-bottom: 0;
+	margin-top: 5px;
 }
 
 .carousel-caption h1
@@ -130,22 +140,73 @@ hr
 	margin-top: 30px;
 }
 
-#row2
+#nouveaute
 {
-	margin: 0px;
-	width: 100%;
-	padding-left: 30px;
-	padding-right: 30px;
+	background: url('../img/nouveautés.png') no-repeat;
+	background-size: cover;
+	display: inline-block;
+	height: 190px;
+	width: 190px;
+}
+#promotions
+{
+	background: url('../img/promotions.png')no-repeat;
+	background-size: cover;
+	display: inline-block;
+	height: 190px;
+	width: 190px;
+}
+#meilleurVente
+{
+	background: url('../img/meilleures ventes.png')no-repeat;
+	background-size: cover;
+	display: inline-block;
+	height: 190px;
+	width: 190px;
+	left: 0;
+}
+#produitMoment
+{
+	background: url('../img/produits du moment.png')no-repeat;
+	background-size: cover;
+	display: inline-block;
+	height: 190px;
+	width: 190px;
 }
 
-#row2 img
+.captionImg
 {
-	width: 24.6%;
+    padding: 0;
+    background: rgba(200,200,200,0.7);
+    padding-top: 20px;
+    height: 60px;
+    margin-top: 68.5%;
+    font-weight: bold;
 }
-@media (max-width : 1199px)
+
+.row2Div
 {
-	#row2 img
-{
-	width: 24.4%;
+	padding: 0;
+	text-align: center;
 }
+
+@media (max-width : 990px)
+{
+	.row2Div
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+#row2
+{
+	width: 100%;
+	padding: 0;
+}
+
+#row2 hr
+{
+	margin-left: 10px;
+    margin-right: 10px;
 }

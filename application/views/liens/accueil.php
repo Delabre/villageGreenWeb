@@ -3,7 +3,7 @@
 		<div class="col-md-offset-1 col-md-8">
 			<img class="center-block" src="<?=base_url("assets/img/logo.png")?>" alt="Logo village green">
 		</div>
-		<aside id="asideHeader" class="col-md-2">
+		<aside id="asideHeader" class="col-md-2 hidden-sm hidden-xs">
 			<a href="#" class="text-center"><div>Panier <span class="glyphicon glyphicon-shopping-cart"></span></div></a>
 			<a href="#" class="text-center"><div id="mid">Contact  <span class="glyphicon glyphicon-envelope"></span></div></a>
 			<a href="#"><div class="text-center"><input id="searchAside" type="search" class="input-sm form-control" placeholder="Recherche"><span class="glyphicon glyphicon-search"></span></div></a>   			
@@ -41,7 +41,7 @@
 		<div class="row">
 			<section id="corpsSection" class="col-md-offset-1 col-md-10">	
 				<div class="row">
-					<div id="divCar" class="col-md-offset-1 col-md-10">
+					<div id="divCar" class="hidden-xs">
 						<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						    <ol class="carousel-indicators">
 							    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -84,13 +84,51 @@
 					</div>
 				</div>
 				<div class="row">
-					<div id="row2" class="col-md-offset-1 col-md-10">
-						<img src="<?=base_url("assets/img/nouveautés.png")?>">
-						<img src="<?=base_url("assets/img/promotions.png")?>">
-						<img src="<?=base_url("assets/img/meilleures ventes.png")?>">
-						<img src="<?=base_url("assets/img/produits du moment.png")?>">
+					<div class="container"  id="row2">
+						<div class="col-md-3 col-sm-6 col-xs-12 row2Div">
+							<div id="nouveaute">
+								<p class="captionImg text-center">Nouveautés</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 row2Div">
+							<div id="promotions">
+								<p class="captionImg text-center">Promotions</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 row2Div">
+							<div id="meilleurVente">
+								<p class="captionImg text-center">Meilleures ventes</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 row2Div">
+							<div id="produitMoment">
+								<p class="captionImg text-center">Produit du moment</p>
+							</div>						
+						</div>
+
+						<div class="col-xs-12">
+						<hr />
+						</div>					
 					</div>
 				</div>
+				<div id="row3" class="row">
+						<div class="col-xs-6">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+						<div class="col-xs-6">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>														
+				</div>							
 			</section>
 		</div>
 	<footer>

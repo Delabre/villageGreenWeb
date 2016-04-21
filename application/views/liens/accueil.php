@@ -1,5 +1,5 @@
 <div class="container">
-	<header class="row">
+	<header id="headerGreen" class="row">
 		<div class="col-md-offset-1 col-md-8">
 			<img class="center-block" src="<?=base_url("assets/img/logo.png")?>" alt="Logo village green">
 		</div>
@@ -23,17 +23,33 @@
 			        </div>
 			        <div id="navbar" class="navbar-collapse collapse">
 			            <ul class="nav navbar-nav">
-			              <li><a href="#">Rubrique</a></li>
-			              <li><a href="#">Rubrique</a></li>
-			              <li><a href="#">Rubrique</a></li>
-			              <li><a href="#">Rubrique</a></li>
-			              <li><a href="#">Rubrique</a></li>
-			              <li><a href="#">Rubrique</a></li>
+			              <li><a href="#">Catalogue</a></li>
+			              <li><a href="#">Contact</a></li>
+			              <li><a href="#">Suivez-nous</a></li>
 			            </ul>
-			            <ul class="nav navbar-nav navbar-right"> 
-			              <li><a href="#">Espace Client</a></li>
-			            </ul>      
-			        </div>
+			            <ul id="btnEspaceClient" class="nav navbar-nav navbar-right">
+			            	<div id="menuEspaceClient" class="hidden-xs">
+								<form>
+									<div class="form-group">
+										<label>Etes-vous déjà client chez nous ?</label>
+										<input class="form-control" type="email" name="user_email" placeholder="Adresse e-mail" />
+										<input class="form-control" type="password" name="user_password" placeholder="Mot de passe" />
+										<input class="btn btnform" type="button" name="btnConnexion" value="Se connecter" />
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="resterConnecter" /> Rester Connecté
+										</label>
+									</div>											
+								</form>
+								<a href="#">Vous avez oublié votre mot de passe ?</a>
+								<hr />
+								<button class="btn btnform">S'inscrire</button>
+								<a href="#" class="text-center">Plus d'informations</a>
+							</div> 
+			              <li><a>Espace client</a></li>
+			            </ul>     
+			        </div>			    
 			   </div>
 			</nav>
 		</div>
@@ -57,14 +73,14 @@
 								    </div>					        
 							    </div>
 							    <div class="item">
-								    <img class="first-slide" src="<?=base_url("assets/img/visu-slider.png")?>" alt="Second slide">
+								    <img class="first-slide" src="<?=base_url("assets/img/visu-slider02.png")?>" alt="Second slide">
 								    <div class="carousel-caption">
 								    <h1>Lorem Ipsum</h1>
 								    <p>Lorem Ipsum</p>
 								    </div>						         
 							    </div>
 							    <div class="item">
-								    <img class="first-slide" src="<?=base_url("assets/img/visu-slider.png")?>" alt="Third slide">	
+								    <img class="first-slide" src="<?=base_url("assets/img/visu-slider03.png")?>" alt="Third slide">	
 								    <div class="carousel-caption">
 								    <h1>Lorem Ipsum</h1>
 								    <p>Lorem Ipsum</p>
@@ -86,24 +102,24 @@
 				<div class="row">
 					<div class="container"  id="row2">
 						<div class="col-md-3 col-sm-6 col-xs-12 row2Div">
-							<div id="nouveaute">
+							<a href="#"><div id="nouveaute">
 								<p class="captionImg text-center">Nouveautés</p>
-							</div>
+							</div></a>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 row2Div">
-							<div id="promotions">
+							<a href="#"><div id="promotions">
 								<p class="captionImg text-center">Promotions</p>
-							</div>
+							</div></a>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 row2Div">
-							<div id="meilleurVente">
+							<a href="#"><div id="meilleurVente">
 								<p class="captionImg text-center">Meilleures ventes</p>
-							</div>
+							</div></a>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 row2Div">
-							<div id="produitMoment">
+							<a href="#"><div id="produitMoment">
 								<p class="captionImg text-center">Produit du moment</p>
-							</div>						
+							</div></a>						
 						</div>
 
 						<div class="col-xs-12">
@@ -112,44 +128,67 @@
 					</div>
 				</div>
 				<div id="row3" class="row">
-					<h3>Nos catégories</h3>
-						<div class="col-xs-6">
-							<ul>
-								<li>Guitares & Basses</li>
-								<li>Batteries & Percussions</li>
-								<li>Pianos & Claviers</li>
-								<li>Studio & Enregistrement</li>
+					<h4>Nos catégories</h4>
+						<div id="divLeft" class="col-xs-6">
+							<ul id="categorie">
+								<li><img src="<?=base_url("assets/img/icon_guitare.png")?>"><a href="#">Guitares & Basses</a></li>
+								<li><img src="<?=base_url("assets/img/icon_baguettes.png")?>"><a href="#">Batteries & Percussions</a></li>
+								<li><img src="<?=base_url("assets/img/icon_clavier.png")?>"><a href="#">Pianos & Claviers</a></li>
+								<li><img src="<?=base_url("assets/img/icon_micro.png")?>"><a href="#">Studio & Enregistrement</a></li>
 							</ul>
 						</div>
 						<div class="col-xs-6">
 							<ul>
-								<li>Matériel DJ</li>
-								<li>Instruments à Vent</li>
-								<li>Instruments Traditionnels</li>
-								<li>Accessoires</li>
+								<li><img src="<?=base_url("assets/img/icon_dj.png")?>"><a href="#">Matériel DJ</a></li>
+								<li><img src="<?=base_url("assets/img/icon_vent.png")?>"><a href="#">Instruments à Vent</a></li>
+								<li><img src="<?=base_url("assets/img/icon_instrutrad.png")?>"><a href="#">Instruments Traditionnels</a></li>
+								<li><img src="<?=base_url("assets/img/icon_accessoires.png")?>"><a href="#">Accessoires</a></li>
 							</ul>
-						</div>														
-				</div>							
+						</div>																			
+				</div>
+				<div class="row">
+					<div class col-xs-12>
+						<hr id="hrRow3" />						
+					</div>					
+				</div>
+				<div id="row4" class="row">
+					<h4>Marques</h4>
+					<div class="text-center" id="divMarques">
+						<ul>
+							<li><a href="#"><img src="<?=base_url('assets/img/fender.gif')?>"></a></li>
+							<li><a href="#"><img src="<?=base_url('assets/img/ibanez.gif')?>"></a></li>
+							<li><a href="#"><img src="<?=base_url('assets/img/roland.gif')?>"></a></li>
+							<li><a href="#"><img src="<?=base_url('assets/img/akg_byharman.gif')?>"></a></li>
+							<li><a href="#"><img src="<?=base_url('assets/img/shure.gif')?>"></a></li>
+						</ul>
+						<ul>
+							<li><a href="#"><img src="<?=base_url('assets/img/yamaha.gif')?>"></a></li>
+							<li><a href="#"><img src="<?=base_url('assets/img/sennheiser.gif')?>"></a></li>
+							<li><a href="#"><img src="<?=base_url('assets/img/k_und_m.gif')?>"></a></li>
+							<li><a href="#"><img src="<?=base_url('assets/img/cordial.gif')?>"></a></li>
+							<li><a href="#"><img src="<?=base_url('assets/img/behringer.gif')?>"></a></li>
+						</ul>
+					</div>																					
+				</div>
+				<div class="row">
+					<div class col-xs-12>
+						<hr id="hrRow3" />						
+					</div>					
+				</div>
+				<div id="row5" class="row text-center">
+						<div class="col-sm-4">
+							<img src="<?=base_url('assets/img/icon_livraison.png')?>">
+							<p>Livraison grtuite à partir de 50€</p>
+						</div>
+						<div class="col-sm-4">
+							<img src="<?=base_url('assets/img/icon_garantie3ans.png')?>">
+							<p>Garantie 3 ans sur tout nos instruments</p>
+						</div>
+						<div class="col-sm-4">
+							<img src="<?=base_url('assets/img/icon_garantie30jours.png')?>">
+							<p>Garantie 30 jours satisfait ou remboursé</p>
+						</div>																				
+				</div>											
 			</section>
 		</div>
-	<footer>
-		<header>
-			
-		</header>
-		<section>
-			
-		</section>
-		<section>
-			
-		</section>
-		<section>
-			
-		</section>
-		<section>
-			
-		</section>
-		<footer>
-			
-		</footer>
-	</footer>
-</div>
+	

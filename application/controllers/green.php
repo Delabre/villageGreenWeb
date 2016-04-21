@@ -22,6 +22,16 @@
 			$this->load->view('liens/accueil');
 			$this->load->view('footer');
 		}
+
+		public function catalogue()
+		{
+			$requete = $this->db->query('SELECT * FROM categories');
+			$data["liste"]= $requete->result();
+
+			$this->load->view('header');
+			$this->load->view('liens/catalogue');
+			$this->load->view('footer');
+		}
 	}
 
 ?>

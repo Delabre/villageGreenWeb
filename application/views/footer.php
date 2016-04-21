@@ -1,3 +1,4 @@
+	</div>
 	<footer id="footerGreen" class="row">
 			<div class="col-md-offset-1 col-md-10">
 				<header id="headerFooter" class="row hidden-xs">

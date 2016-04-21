@@ -1,6 +1,4 @@
-	<div class="row">
-		<section id="corpsSection" class="col-md-offset-1 col-md-10">	
-			<div class="row">
+				<div class="row">
 				<div id="divCar" class="hidden-xs">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					    <ol class="carousel-indicators">

@@ -10,7 +10,7 @@
 	<div class="container">
 	<header id="headerGreen" class="row">
 		<div class="col-md-offset-1 col-md-8">
-			<img class="center-block" src="<?=base_url("assets/img/logo.png")?>" alt="Logo village green">
+			<a href="<?=site_url('green/accueil')?>"><img class="center-block" src="<?=base_url("assets/img/logo.png")?>" alt="Logo village green"></a>
 		</div>
 		<aside id="asideHeader" class="col-md-2 hidden-sm hidden-xs">
 			<a href="#" class="text-center"><div>Panier <span class="glyphicon glyphicon-shopping-cart"></span></div></a>
@@ -19,7 +19,6 @@
 		</aside>
 	</header>
 	<div class="row">
-	<h1>SALOPE !!!!</h1>
 		<div id="divNav" class="col-md-offset-1 col-md-10">
 			<nav id="navGreen" class="navbar navbar-default">
 				<div class="container-fluid">
@@ -64,3 +63,5 @@
 			</nav>
 		</div>
 	</div>
+	<div class="row">
+	<section id="corpsSection" class="col-md-offset-1 col-md-10">

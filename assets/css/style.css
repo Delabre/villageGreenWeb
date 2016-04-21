@@ -432,3 +432,42 @@ hr
 {
 	margin-top: 15px;
 }
+
+#rowCatalogue ul
+{
+	list-style: none;
+	padding-left: 10%;
+}
+
+#rowCatalogue h4
+{
+	margin-top: 30px;
+	margin-left: 30px;
+	font-weight: bold;
+}
+
+#rowCatalogue h5
+{
+	font-weight: bold;
+}
+
+#rowCatalogue img
+{
+	margin-right: 50px;
+}
+
+#sousCategorie
+{
+	margin-bottom: 50px;
+}
+
+#rowCatalogue p
+{
+	margin: 50px;
+	padding: 30px;
+}
+
+#totalProduit
+{
+	font-weight: bold;
+}

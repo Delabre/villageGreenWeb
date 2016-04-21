@@ -25,11 +25,26 @@
 
 		public function catalogue()
 		{
-			$requete = $this->db->query('SELECT * FROM categories');
+			$requete = $this->db->query('SELECT * FROM Categories');
 			$data["liste"]= $requete->result();
 
+			$requete2 = $this->db->query('SELECT * FROM Sous_Categories');
+			$data["liste2"]= $requete2->result();
+
+			$requete3 = $this->db->query('SELECT count(id_produit) as pute FROM produits');
+			$data["liste3"]= $requete3->row();
+
+			
+
 			$this->load->view('header');
-			$this->load->view('liens/catalogue');
+			$this->load->view('liens/catalogue', $data);
+			$this->load->view('footer');
+		}
+
+		public function produit()
+		{		
+			$this->load->view('header');
+			$this->load->view('liens/produit', $data);
 			$this->load->view('footer');
 		}
 	}

@@ -1,5 +1,5 @@
 <section class="row">
-	<!-- <h4><?=$liste2->Nom_Sous_categories?></h4> -->
+	<h4><?=$liste2->Nom_Sous_categories?></h4>
 	<?php foreach ($liste as $row): ?>
 		<div class="row">
 		<article class="col-sm-4 sectionProduit">

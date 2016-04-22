@@ -46,8 +46,8 @@
 			$requete = $this->db->query('SELECT * FROM Produits WHERE Ref_Id_Sous_Categories_Prod = ? ', $id);
 			$data['liste'] = $requete->result();
 
-			// $requete2 = $this->db->query('SELECT Nom_Sous_categories FROM sous_categories INNER JOIN produits ON Ref_Id_Sous_Categories_Prod = Id_sous_categories where Id_Produit = ?', $id);
-			// $data["liste2"]= $requete2->row();
+			$requete2 = $this->db->query('SELECT Nom_Sous_categories FROM Sous_Categories WHERE Id_Sous_Categories = ? ', $id);
+			$data["liste2"]= $requete2->row();
 
 			$this->load->view('header');
 			$this->load->view('liens/produit', $data);

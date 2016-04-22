@@ -471,3 +471,22 @@ hr
 {
 	font-weight: bold;
 }
+
+.sectionProduit
+{
+	background: white;
+	padding: 15px;
+	margin: 30px;
+}
+
+.sectionProduit img
+{
+	width: 110px;
+	height: auto;
+	float: left;
+}
+
+.sectionProduit h5
+{
+	font-weight: bold;
+}

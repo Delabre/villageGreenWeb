@@ -31,7 +31,7 @@
 			$requete2 = $this->db->query('SELECT * FROM Sous_Categories');
 			$data["liste2"]= $requete2->result();
 
-			$requete3 = $this->db->query('SELECT count(id_produit) as pute FROM produits');
+			$requete3 = $this->db->query('SELECT count(id_produit) as nb FROM produits');
 			$data["liste3"]= $requete3->row();
 
 			
@@ -41,8 +41,14 @@
 			$this->load->view('footer');
 		}
 
-		public function produit()
-		{		
+		public function produit($id)
+		{
+			$requete = $this->db->query('SELECT * FROM Produits WHERE Ref_Id_Sous_Categories_Prod = ? ', $id);
+			$data['liste'] = $requete->result();
+
+			// $requete2 = $this->db->query('SELECT Nom_Sous_categories FROM sous_categories INNER JOIN produits ON Ref_Id_Sous_Categories_Prod = Id_sous_categories where Id_Produit = ?', $id);
+			// $data["liste2"]= $requete2->row();
+
 			$this->load->view('header');
 			$this->load->view('liens/produit', $data);
 			$this->load->view('footer');

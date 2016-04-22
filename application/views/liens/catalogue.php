@@ -1,6 +1,6 @@
 	<div class="row" id="rowCatalogue">
 			<h4>Catalogue</h4>
-			<p class="bg-info center-block">Vous trouverez dans notre catalogue en ligne tous les produits que nous proposons actuellement, triés par catégorie. Nous Village Green avons actuellement <span id="totalProduit"><?=$liste3->pute ?> produits</span> au catalogue.</p>
+			<p class="bg-info center-block">Vous trouverez dans notre catalogue en ligne tous les produits que nous proposons actuellement, triés par catégorie. Nous Village Green avons actuellement <span id="totalProduit"><?=$liste3->nb ?> produits</span> au catalogue.</p>
 
 			<?php foreach ($liste as $row):?>
 				<ul>				
@@ -9,7 +9,7 @@
 							<div id="sousCategorie">							
 								<?php foreach ($liste2 as $row2):?>
 									<?php if ($row->Id_Categories == $row2->Ref_categories): ?>							
-										<li><a href="#"><?=$row2->Nom_Sous_Categories?></a></li>
+										<li><a href="<?=site_url("green/produit/$row2->Id_sous_categories")?>"><?=$row2->Nom_Sous_Categories?></a></li>
 									<?php endif ?>
 								<?php endforeach;?>
 							</div>
@@ -41,4 +41,3 @@
 					</ul>
 				</div>																					
 			</div>
-</section>

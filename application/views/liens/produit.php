@@ -14,7 +14,7 @@
 			</article>
 		<?php endforeach ?>
 		<article class="sectionProduit"  id="ajoutProduit">
-			<a href=""><img src="<?=base_url("assets/img/imagePlus.png")?>"></a>
+			<a href="<?=site_url("green/ajouter/$liste2->Id_sous_categories")?>"><img src="<?=base_url("assets/img/imagePlus.png")?>"></a>
 		</article>
 	</div>
 </section>

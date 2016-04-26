@@ -47,7 +47,7 @@
 			$requete = $this->db->query('SELECT * FROM Produits WHERE Ref_Id_Sous_Categories_Prod = ? ', $id);
 			$data['liste'] = $requete->result();
 
-			$requete2 = $this->db->query('SELECT Nom_Sous_categories FROM Sous_Categories WHERE Id_Sous_Categories = ? ', $id);
+			$requete2 = $this->db->query('SELECT Nom_Sous_categories, Id_sous_categories FROM Sous_Categories WHERE Id_Sous_Categories = ? ', $id);
 			$data["liste2"]= $requete2->row();
 
 			$this->load->view('header');
@@ -88,6 +88,35 @@
 			$this->load->view('liens/supprimer', $data);
 			$this->load->view('footer');
 		}
-	}
 
+		public function script_supprimer($id)
+		{
+			$requete = $this->db->query('DELETE FROM produits WHERE id_produit = ?', $id);
+			redirect(site_url('green/catalogue'));
+		}
+
+		public function ajouter($idSsCat)
+		{
+			$requete = $this->db->query('SELECT Nom_Sous_categories, Id_sous_categories FROM Sous_Categories WHERE Id_sous_categories = ?', $idSsCat);
+			$data["liste"] = $requete->row();
+
+			$requete = $this->db->query('SELECT * FROM fournisseurs');
+			$data["liste2"] = $requete->result();
+
+			$this->load->view('header');
+			$this->load->view('liens/ajouter', $data);
+			$this->load->view('footer');
+		}
+
+		public function script_ajouter()
+		{	
+			$data = $this->input->post();
+
+			$str = $this->db->insert_string('Produits',$data);
+			$this->db->query($str);
+
+			redirect(site_url('green/catalogue'));
+		}
+
+	}
 ?>

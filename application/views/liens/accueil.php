@@ -73,18 +73,18 @@
 				<h4>Nos catégories</h4>
 					<div id="divLeft" class="col-xs-6">
 						<ul id="categorie">
-							<li><img src="<?=base_url("assets/img/icon_guitare.png")?>"><a href="#">Guitares & Basses</a></li>
-							<li><img src="<?=base_url("assets/img/icon_baguettes.png")?>"><a href="#">Batteries & Percussions</a></li>
-							<li><img src="<?=base_url("assets/img/icon_clavier.png")?>"><a href="#">Pianos & Claviers</a></li>
-							<li><img src="<?=base_url("assets/img/icon_micro.png")?>"><a href="#">Studio & Enregistrement</a></li>
+							<li><img src="<?=base_url("assets/img/icon_guitare.png")?>"><a href="<?=site_url('green/catalogue')?>">Guitares & Basses</a></li>
+							<li><img src="<?=base_url("assets/img/icon_baguettes.png")?>"><a href="<?=site_url('green/catalogue')?>">Batteries & Percussions</a></li>
+							<li><img src="<?=base_url("assets/img/icon_clavier.png")?>"><a href="<?=site_url('green/catalogue')?>">Pianos & Claviers</a></li>
+							<li><img src="<?=base_url("assets/img/icon_micro.png")?>"><a href="<?=site_url('green/catalogue')?>">Studio & Enregistrement</a></li>
 						</ul>
 					</div>
 					<div class="col-xs-6">
 						<ul>
-							<li><img src="<?=base_url("assets/img/icon_dj.png")?>"><a href="#">Matériel DJ</a></li>
-							<li><img src="<?=base_url("assets/img/icon_vent.png")?>"><a href="#">Instruments à Vent</a></li>
-							<li><img src="<?=base_url("assets/img/icon_instrutrad.png")?>"><a href="#">Instruments Traditionnels</a></li>
-							<li><img src="<?=base_url("assets/img/icon_accessoires.png")?>"><a href="#">Accessoires</a></li>
+							<li><img src="<?=base_url("assets/img/icon_dj.png")?>"><a href="<?=site_url('green/catalogue')?>">Matériel DJ</a></li>
+							<li><img src="<?=base_url("assets/img/icon_vent.png")?>"><a href="<?=site_url('green/catalogue')?>">Instruments à Vent</a></li>
+							<li><img src="<?=base_url("assets/img/icon_instrutrad.png")?>"><a href="<?=site_url('green/catalogue')?>">Instruments Traditionnels</a></li>
+							<li><img src="<?=base_url("assets/img/icon_accessoires.png")?>"><a href="<?=site_url('green/catalogue')?>">Accessoires</a></li>
 						</ul>
 					</div>																			
 			</div>

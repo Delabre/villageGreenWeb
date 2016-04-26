@@ -8,6 +8,7 @@
 
 			$this->load->database();
 			$this->load->helper('url');
+			$this->load->library('form_validation');
 		}
 
 
@@ -51,6 +52,40 @@
 
 			$this->load->view('header');
 			$this->load->view('liens/produit', $data);
+			$this->load->view('footer');
+		}
+
+		public function modifier($id)
+		{
+			$requete = $this->db->query('SELECT * FROM produits WHERE id_produit = ?', $id);
+			$data["liste"] = $requete->row();
+			$requete = $this->db->query('SELECT * FROM fournisseurs');
+			$data["liste2"] = $requete->result();
+
+			$this->load->view('header');
+			$this->load->view('liens/modifier', $data);
+			$this->load->view('footer');
+		}
+
+		public function script_modifier()
+		{
+
+			$tab = $this->input->post();
+			$id = $this->input->post("Id_Produit");
+
+			$str = $this->db->update_string("produits", $tab, "Id_Produit=".$id);
+			$this->db->query($str);
+
+			redirect(site_url("green/catalogue"));
+		}
+
+		public function supprimer($id)
+		{
+			$requete = $this->db->query('SELECT * FROM produits WHERE id_produit = ?', $id);
+			$data["liste"] = $requete->row();
+
+			$this->load->view('header');
+			$this->load->view('liens/supprimer', $data);
 			$this->load->view('footer');
 		}
 	}

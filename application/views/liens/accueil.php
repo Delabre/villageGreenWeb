@@ -1,4 +1,4 @@
-				<div class="row">
+			<div class="row">
 				<div id="divCar" class="hidden-xs">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					    <ol class="carousel-indicators">
@@ -131,6 +131,4 @@
 						<p>Garantie 30 jours satisfait ou remboursé</p>
 					</div>																				
 			</div>											
-		</section>
-	</div>
-	
+		

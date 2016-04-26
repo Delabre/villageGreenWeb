@@ -1,15 +1,20 @@
-<section class="row">
-	<h4><?=$liste2->Nom_Sous_categories?></h4>
-	<?php foreach ($liste as $row): ?>
-		<div class="row">
-		<article class="col-sm-4 sectionProduit">
-			<img src="<?=base_url("assets/img/$row->Photo_Produit")?>">
-			<div class="divContenu"></div>
-			<h5><?=$row->Libelle_Produit?></h5>
-			<p><?=$row->Description_Produit?></p>
-			<p><?=$row->Prix_HT_Produit?> €</p>
-			<button>Ajouter au panier</button>		
+<h4><?=$liste2->Nom_Sous_categories?></h4>
+	<div class="row">
+		<?php foreach ($liste as $row): ?>		
+			<article class="sectionProduit thumbnail">			
+				<div class="divContenu caption">
+					<h5><?=$row->Libelle_Produit?></h5>
+					<p><?=$row->Description_Produit?></p>
+					<p><?=$row->Prix_HT_Produit?> €</p>
+				</div>
+				<div class="text-right">
+					<a href="<?=site_url("green/modifier/$row->Id_Produit")?>"><button class="btn btn-info">Modifier</button></a>
+					<a href="<?=site_url("green/supprimer/$row->Id_Produit")?>"><button class="btn btn-danger">Supprimer</button></a>	
+				</div>											
+			</article>
+		<?php endforeach ?>
+		<article class="sectionProduit"  id="ajoutProduit">
+			<a href=""><img src="<?=base_url("assets/img/imagePlus.png")?>"></a>
 		</article>
-		</div>
-	<?php endforeach ?>
+	</div>
 </section>

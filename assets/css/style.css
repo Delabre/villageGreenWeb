@@ -451,11 +451,6 @@ hr
 	font-weight: bold;
 }
 
-#rowCatalogue img
-{
-	margin-right: 50px;
-}
-
 #sousCategorie
 {
 	margin-bottom: 50px;
@@ -479,14 +474,16 @@ hr
 	margin: 30px;
 }
 
-.sectionProduit img
-{
-	width: 110px;
-	height: auto;
-	float: left;
-}
-
 .sectionProduit h5
 {
 	font-weight: bold;
+}
+
+#ajoutProduit
+{
+	background: none;
+	height: 162px;
+	border: 5px dashed #4aaf67; 
+	border-radius: 5px;
+	text-align: center;
 }

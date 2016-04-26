@@ -1,6 +1,7 @@
+	</section>
 	</div>
+	<div class="col-md-offset-1 col-md-10">
 	<footer id="footerGreen" class="row">
-			<div class="col-md-offset-1 col-md-10">
 				<header id="headerFooter" class="row hidden-xs">
 					<div class="col-sm-3">
 						<p>Paiements sécurisés</p>
@@ -55,9 +56,9 @@
 						<p>© 1996 – 2016 Village Green</p>
 					</div>
 				</footer>
-			</div>
 		</footer>
-	</div>
+		</div>
+		<div></div>
 </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

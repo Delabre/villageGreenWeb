@@ -54,7 +54,7 @@
 									</form>
 									<a href="#">Vous avez oublié votre mot de passe ?</a>
 									<hr />
-									<button class="btn btnform">S'inscrire</button>
+									<a href="<?=site_url('green/inscription')?>"><button class="btn btnform">S'inscrire</button></a>
 									<a href="#" class="text-center">Plus d'informations</a>
 								</div> 
 				              <li><a>Espace client</a></li>

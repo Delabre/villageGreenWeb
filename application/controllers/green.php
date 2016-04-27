@@ -118,5 +118,12 @@
 			redirect(site_url('green/catalogue'));
 		}
 
+		public function inscription()
+		{
+			$this->load->view('header');
+			$this->load->view('liens/inscription');
+			$this->load->view('footer');
+		}
+
 	}
 ?>

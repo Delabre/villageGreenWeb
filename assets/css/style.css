@@ -533,7 +533,40 @@ hr
 .alert-success
 {
 	width: 60%;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 200px;
+	margin-bottom: 1000px;
 	text-align: center;
 }
+
+#ajouter
+{
+	width: 50%;
+	margin: auto;
+}
+
+#ajouter .form-control
+{
+	margin-bottom: 15px;
+}
+
+#ajouter .btn
+{
+	margin-bottom: 50px;
+}
+
+#formModifier .form-control
+{
+	margin-bottom: 15px;
+}
+
+#formModifier
+{
+	width: 50%;
+	margin: auto;
+}
+
+#formModifier .btn
+{
+	margin-bottom: 50px;
+}
+

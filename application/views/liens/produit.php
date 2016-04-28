@@ -1,4 +1,5 @@
-<h4><?=$liste2->Nom_Sous_categories?></h4>
+<br />
+<h4><b><?=$liste2->Nom_Sous_categories?></b></h4>
 	<div class="row">
 		<?php foreach ($liste as $row): ?>		
 			<article class="sectionProduit thumbnail">			

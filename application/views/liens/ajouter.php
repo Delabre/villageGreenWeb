@@ -1,6 +1,7 @@
-<div class="row">
-	<h4>Ajout <b><?=$liste->Nom_Sous_categories?><b></h4>
-
+<br />
+<h4>Ajout <b><?=$liste->Nom_Sous_categories?><b></h4>
+<br />
+<div class="row" id="ajouter">
 	<form action="<?=site_url("green/script_ajouter")?>" method="POST" class="form-group">
 		<input type="hidden" name="Ref_Id_Sous_Categories_Prod" value="<?=$liste->Id_sous_categories?>"></input>
 
@@ -27,6 +28,6 @@
 		<input class="form-control" type="number" name="Prix_Achat_Fournisseur" />
 
 		<input class="btn btn-info" type="submit" value="Valider" />
-		<button type="button" class="btn btn-danger">Annuler</button>
+		<a href="<?=site_url('green/catalogue')?>"><button type="button" class="btn btn-danger">Annuler</button></a>
 	</form>
 </div>

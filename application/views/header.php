@@ -34,7 +34,7 @@
 				            <ul class="nav navbar-nav">
 					            <li><a href="<?=site_url('green/accueil')?>">Accueil</a></li>
 					            <li><a href="<?=site_url('green/catalogue')?>">Catalogue</a></li>
-					            <li><a href="#">Contact</a></li>
+					            <li><a href="<?=site_url('green/contact')?>">Contact</a></li>
 					            <li><a href="#">Suivez-nous</a></li>
 				            </ul>
 				            <ul id="btnEspaceClient" class="nav navbar-nav navbar-right">

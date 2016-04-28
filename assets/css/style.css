@@ -487,3 +487,37 @@ hr
 	border-radius: 5px;
 	text-align: center;
 }
+
+
+#contact form
+{
+	color: #4aaf67;
+	width: 50%;
+	margin: auto;
+	padding-bottom: 100px;
+	padding-top: 30px;
+}
+
+#contact input, textarea
+{
+	margin-bottom: 10px;
+	border: 2px solid #4aaf67;
+}
+
+#contact h3
+{
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+#contact .btn
+{
+	color: white;
+	background-color: #4aaf67;
+}
+
+#contact textarea
+{
+	border: 2px solid #4aaf67;
+}
+

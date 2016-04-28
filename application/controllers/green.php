@@ -125,5 +125,12 @@
 			$this->load->view('footer');
 		}
 
+		public function contact()
+		{
+			$this->load->view('header');
+			$this->load->view('liens/contact');
+			$this->load->view('footer');
+		}
+
 	}
 ?>

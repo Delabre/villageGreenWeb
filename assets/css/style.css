@@ -521,7 +521,19 @@ hr
 	border: 2px solid #4aaf67;
 }
 
-#contact p
+#contact .form p
 {
-	border: 1px red solid;
+	padding: 10px;
+	border: 1px #ebccd1 solid;
+	border-radius: 5px;
+	background-color: #f2dede;
+	color: #a94442;
+}
+
+.alert-success
+{
+	width: 60%;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
 }

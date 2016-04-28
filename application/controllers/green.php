@@ -139,17 +139,25 @@
 			$this->form_validation->set_rules('Nom_Contact', '"Nom"', 'trim|required|min_length[3]|max_length[40]|alpha_dash');
 			$this->form_validation->set_rules('Prenom_Contact', '"Prénom"', 'trim|required|min_length[3]|max_length[40]|alpha_dash');
 			$this->form_validation->set_rules('Mail_Contact', '"Prénom"', 'trim|required|min_length[3]|max_length[100]|valid_email');
-			$this->form_validation->set_rules('Message_Contact', '"Message"', 'trim|required|min_length[3]|max_length[40]|alpha_dash');
+			$this->form_validation->set_rules('Message_Contact', '"Message"', 'trim|required|min_length[3]|max_length[40]');
 
 			$this->form_validation->set_message('required', 'Ce champ ne peut pas être vide');
 			$this->form_validation->set_message('max_length', 'Trop de caractères');
 			$this->form_validation->set_message('min_length', 'Il faut au moins 3 caractères');
 			$this->form_validation->set_message('valid_email', 'Veuillez entrer une adresse mail valide');
+			$this->form_validation->set_message('alpha_dash', 'Le champ ne peut contenir que des caractères alphanumériques, underscores "_" et tirets "-"');
 
 
 			if ($this->form_validation->run()) 
 			{
-				$this->load->view('liens/envoiFormContact_reussi');	
+				$data = $this->input->post();
+
+				$str = $this->db->insert_string('Contacts',$data);
+				$this->db->query($str);
+				
+				$this->load->view('header');
+				$this->load->view('liens/envoiFormContact_reussi');
+				$this->load->view('footer');
 			}
 			else
 			{	
@@ -158,6 +166,5 @@
 				$this->load->view('footer');	
 			}
 		}
-
 	}
 ?>

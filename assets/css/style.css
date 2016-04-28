@@ -521,3 +521,7 @@ hr
 	border: 2px solid #4aaf67;
 }
 
+#contact p
+{
+	border: 1px red solid;
+}

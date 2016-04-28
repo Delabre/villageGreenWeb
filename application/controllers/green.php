@@ -9,6 +9,7 @@
 			$this->load->database();
 			$this->load->helper('url');
 			$this->load->library('form_validation');
+			$this->load->helper('form');
 		}
 
 
@@ -130,6 +131,32 @@
 			$this->load->view('header');
 			$this->load->view('liens/contact');
 			$this->load->view('footer');
+		}
+
+		public function envoiFormContact()
+		{		
+
+			$this->form_validation->set_rules('Nom_Contact', '"Nom"', 'trim|required|min_length[3]|max_length[40]|alpha_dash');
+			$this->form_validation->set_rules('Prenom_Contact', '"Prénom"', 'trim|required|min_length[3]|max_length[40]|alpha_dash');
+			$this->form_validation->set_rules('Mail_Contact', '"Prénom"', 'trim|required|min_length[3]|max_length[100]|valid_email');
+			$this->form_validation->set_rules('Message_Contact', '"Message"', 'trim|required|min_length[3]|max_length[40]|alpha_dash');
+
+			$this->form_validation->set_message('required', 'Ce champ ne peut pas être vide');
+			$this->form_validation->set_message('max_length', 'Trop de caractères');
+			$this->form_validation->set_message('min_length', 'Il faut au moins 3 caractères');
+			$this->form_validation->set_message('valid_email', 'Veuillez entrer une adresse mail valide');
+
+
+			if ($this->form_validation->run()) 
+			{
+				$this->load->view('liens/envoiFormContact_reussi');	
+			}
+			else
+			{	
+				$this->load->view('header');
+				$this->load->view('liens/contact');
+				$this->load->view('footer');	
+			}
 		}
 
 	}
